@@ -117,7 +117,7 @@ export default function FleetShowcase() {
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
                   <div className="flex items-center gap-1 px-2.5 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider bg-black/45 backdrop-blur-md rounded border border-white/20 text-brand-accent">
                     <span className="h-1.5 w-1.5 bg-brand-accent rounded-full animate-pulse mr-1" />
-                    Confirmação Instantânea
+                    Disponibilidade por WhatsApp
                   </div>
                   <span className="font-heading text-base font-bold tracking-tight text-white/95">
                     DURUS E-Pedelec
@@ -231,7 +231,7 @@ export default function FleetShowcase() {
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white">
                   <div className="flex items-center gap-1 px-2.5 py-0.5 font-sans text-[10px] font-bold uppercase tracking-wider bg-black/45 backdrop-blur-md rounded border border-white/20 text-slate-300">
                     <span className="h-1.5 w-1.5 bg-slate-300 rounded-full animate-pulse mr-1" />
-                    Confirmação Instantânea
+                    Disponibilidade por WhatsApp
                   </div>
                   <span className="font-heading text-base font-bold tracking-tight text-white/95">
                     DURUS Classic Tourer
