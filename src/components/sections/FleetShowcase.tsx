@@ -9,7 +9,10 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { createWhatsAppUrl } from "../../lib/whatsapp";
 import WhatsAppIcon from "../ui/WhatsAppIcon";
-import { Zap, Bike, Users, ChevronDown, ChevronUp, MapPin, CheckCircle, Navigation } from "lucide-react";
+import { Zap, Bike, Users, ChevronDown, ChevronUp, MapPin } from "lucide-react";
+
+const googleMapsEmbedUrl =
+  "https://www.google.com/maps?q=Durus%20Rent%20Bike%20and%20e-Bike%2C%20Mercado%20da%20Ribeira%2C%20Cais%20da%20Ribeira%202%203%20e%204%2C%204000-509%20Porto&output=embed";
 
 export default function FleetShowcase() {
   // State to manage active expanded details for each category ("electric" | "classic" | null)
@@ -367,72 +370,56 @@ export default function FleetShowcase() {
           </div>
         </motion.div>
 
-        {/* Location bridge mini-map inside Bike Rental section */}
+        {/* Real Google Maps Location Area */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto bg-white rounded-2xl border border-slate-200/80 p-8 flex flex-col items-center gap-8 relative shadow-sm"
+          transition={{ duration: 0.5 }}
+          className="max-w-5xl mx-auto bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all duration-300"
         >
-          <div className="text-center max-w-xl">
-            <span className="text-[10px] uppercase font-bold text-brand-accent tracking-widest font-sans flex items-center justify-center gap-1.5 mb-2">
-              <Navigation className="h-3.5 w-3.5" />
-              Dois lados da Ponte Luís I
-            </span>
-            <h4 className="font-heading text-xl font-bold text-slate-800 mb-2 tracking-tight">
-              Ligação entre o Porto e Gaia
-            </h4>
-            <p className="font-sans text-xs text-slate-500 leading-relaxed font-light">
-              Ajudamos visitantes que querem explorar a Ribeira, atravessar para Gaia e seguir junto ao Douro com orientação local antes de sair.
-            </p>
+          {/* Top text area above map */}
+          <div className="p-8 md:p-10 text-center md:text-left flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-slate-100">
+            <div className="space-y-2 max-w-2xl">
+              <span className="text-[#BE123C] font-sans text-xs font-bold uppercase tracking-widest block">
+                Localização
+              </span>
+              <h4 className="font-heading text-2xl font-bold text-slate-800 tracking-tight">
+                Onde encontrar a DURUS
+              </h4>
+              <p className="font-sans text-sm text-slate-600 leading-relaxed font-light">
+                Estamos junto ao Mercado da Ribeira, no eixo entre a Ribeira, a Ponte Luís I e Vila Nova de Gaia — ideal para começar o passeio de bicicleta junto ao Douro.
+              </p>
+              
+              <div className="flex items-center gap-2 text-xs text-slate-500 font-sans mt-3 justify-center md:justify-start">
+                <MapPin className="h-4 w-4 text-[#BE123C] shrink-0" />
+                <span className="font-medium">Durus - Rent Bike and e-Bike · Mercado da Ribeira, Cais da Ribeira 2, 3 e 4, 4000-509 Porto</span>
+              </div>
+            </div>
+
+            {/* Small pills */}
+            <div className="flex flex-wrap gap-2 justify-center md:justify-end max-w-xs shrink-0 pt-2 md:pt-0">
+              {["Mercado da Ribeira", "Ponte Luís I", "Douro", "Gaia"].map((pill) => (
+                <span 
+                  key={pill} 
+                  className="px-2.5 py-1 bg-slate-50 text-slate-700 font-sans text-[10px] uppercase font-bold tracking-wider rounded border border-slate-200"
+                >
+                  {pill}
+                </span>
+              ))}
+            </div>
           </div>
 
-          {/* Elegant Conceptual Route Visual (Pure CSS) */}
-          <div className="w-full max-w-2xl px-4 py-3 bg-slate-50 rounded-xl border border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-2 select-none relative">
-            
-            {/* Connection Route Line (Thin accent) */}
-            <div className="absolute top-[26%] left-[15%] right-[15%] h-[2px] bg-dashed border-b border-dashed border-brand-accent/30 hidden md:block -z-0" aria-hidden="true" />
-            <div className="absolute top-[26%] left-[15%] right-[15%] h-[2px] bg-gradient-to-r from-emerald-500 via-brand-accent to-rose-500 hidden md:block -z-0 opacity-40" aria-hidden="true" />
-
-            {/* Hub Point 1 */}
-            <div className="flex flex-col items-center text-center relative z-10 w-full md:w-1/3">
-              <div className="h-10 w-10 rounded-full bg-[#9F1239]/5 border border-[#9F1239]/20 flex items-center justify-center text-slate-800 font-sans font-bold text-xs select-none shadow-sm">
-                01
-              </div>
-              <span className="font-heading text-xs font-bold text-slate-800 mt-2">
-                Ribeira, Porto
-              </span>
-              <span className="font-sans text-[10px] text-slate-400 font-medium">
-                Ponto de Partida · E-bikes
-              </span>
-            </div>
-
-            {/* Segment Bridge */}
-            <div className="flex flex-col items-center text-center relative z-10 w-full md:w-1/3">
-              <div className="h-10 w-10 rounded-full bg-brand-accent/10 border-2 border-brand-accent/50 flex items-center justify-center text-brand-accent font-sans font-bold text-xs select-none shadow-sm animate-pulse">
-                <Navigation className="h-4.5 w-4.5 rotate-45" />
-              </div>
-              <span className="font-heading text-xs font-bold text-brand-accent mt-2">
-                Ponte D. Luís I
-              </span>
-              <span className="font-sans text-[10px] text-brand-accent/80 font-semibold uppercase tracking-wider">
-                Travessia Cénica
-              </span>
-            </div>
-
-            {/* Hub Point 2 */}
-            <div className="flex flex-col items-center text-center relative z-10 w-full md:w-1/3">
-              <div className="h-10 w-10 rounded-full bg-[#1E293B]/5 border border-[#1E293B]/20 flex items-center justify-center text-slate-800 font-sans font-bold text-xs select-none shadow-sm">
-                02
-              </div>
-              <span className="font-heading text-xs font-bold text-slate-800 mt-2">
-                Gaia / Caves
-              </span>
-              <span className="font-sans text-[10px] text-slate-400 font-medium">
-                Provas de Vinho &amp; Barcos
-              </span>
-            </div>
-
+          {/* Interactive embedded map */}
+          <div className="w-full relative bg-slate-100">
+            <iframe
+              src={googleMapsEmbedUrl}
+              title="Mapa da localização DURUS Bikes & Tours"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              allowFullScreen
+              className="w-full h-[260px] md:h-[320px] border-0 block"
+            />
           </div>
         </motion.div>
 
