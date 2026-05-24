@@ -88,10 +88,11 @@ export default function Hero() {
           {/* Majestic Hero Main Header */}
           <motion.h1
             variants={itemVariants}
-            className="font-heading text-5xl sm:text-6xl md:text-8xl lg:text-[90px] font-extrabold tracking-tight leading-[1.05] text-white selection:bg-brand-accent selection:text-white"
+            className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[90px] font-extrabold tracking-tight leading-[1.1] selection:bg-brand-accent selection:text-white"
           >
-            Pedalar. Navegar.<br />
-            <span className="text-brand-accent text-transparent bg-clip-text bg-gradient-to-r from-white via-brand-accent to-[#F43F5E]">Degustar.</span>
+            <span className="bg-gradient-to-r from-white via-[#FFF1F2] to-[#FFE4E6] text-transparent bg-clip-text drop-shadow-[0_2px_25px_rgba(159,18,57,0.4)]">
+              Pedalar. Navegar. Degustar.
+            </span>
           </motion.h1>
 
           {/* Seamless Subhead narrative */}
