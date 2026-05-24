@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-light: #FFFFFF;
+  --color-brand-muted: #F8FAFC;
+  --color-brand-dark: #334155;
+  --color-brand-primary: #1E293B;
+  --color-brand-accent: #9F1239;
+  --color-brand-whatsapp: #25D366;
+  --color-brand-whatsapp-dark: #128C7E;
+  --color-brand-whatsappDark: #128C7E;
+}

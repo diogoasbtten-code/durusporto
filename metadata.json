@@ -1,0 +1,6 @@
+{
+  "name": "Porto Premium Experiences",
+  "description": "Premium Porto Experiences: Bike Rentals, Douro River Boat Tours, and Wine Cellar Tastings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

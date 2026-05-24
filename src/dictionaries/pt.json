@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "fleet": "A Frota",
+    "boats": "Barcos no Douro",
+    "cellar": "Cave de Vinhos",
+    "cta": "Fale Connosco"
+  },
+  "hero": {
+    "badge": "Experiências Boutique Exclusivas",
+    "title": "Pedalar. Navegar. Degustar.",
+    "subtitle": "A derradeira experiência do Porto. E-bikes premium, passeios privados no rio Douro e caves de vinho históricas.",
+    "cta_primary": "Fale com um Especialista",
+    "cta_secondary": "Explorar Experiências",
+    "availability": "🟢 Disponível agora. Fale diretamente connosco no WhatsApp.",
+    "scroll_hint": "Deslize para Descobrir"
+  },
+  "fleet": {
+    "badge": "Arquitetura Móvel Personalizada",
+    "title": "A Frota Premium",
+    "text": "Atravesse as colinas lendárias do Porto, calçadas rústicas e caminhos costeiros deslumbrantes com absoluta elegância. Temos exclusivamente e-bikes personalizadas de engenharia alemã, mantidas em estado imaculado pelos nossos mecânicos residentes.",
+    "check_availability": "Verificar Disponibilidade"
+  },
+  "experiences": {
+    "boats": {
+      "badge": "Cruzeiros ao Pôr do Sol",
+      "title": "Navegar no Douro",
+      "text": "Navegue pela deslumbrante paisagem histórica do Porto. Testemunhe a arquitetura espetacular das seis pontes a partir de posições privilegiadas na água a bordo do nosso barco de cruzeiro clássico, meticulosamente restaurado. Acompanhado por vinhos de reserva selecionados e petiscos locais, esta é a elegância do pôr do sol no seu auge absoluto.",
+      "feature_1": "Aluguer Privado (Até 8 Exploradores)",
+      "feature_2": "Sommelier e Catering Incluídos",
+      "cta": "Pedir Disponibilidade de Barco"
+    },
+    "cellar": {
+      "badge": "Caves de Vila Nova de Gaia",
+      "title": "Caves Históricas",
+      "text": "Respire o legado perfumado a carvalho de Vila Nova de Gaia. Entre em salas reservadas que abrigam cascos de envelhecimento com néctar vintage que remonta a mais de um século. A sua experiência privada inclui acesso a garrafeiras históricas, provas verticais de Tawnies raros e narrativas conduzidas por um sommelier certificado.",
+      "feature_1": "Acesso Exclusivo à Garrafeira de Reserva",
+      "feature_2": "Provas Conduzidas por Sommelier",
+      "cta": "Reservar Prova"
+    }
+  },
+  "footer": {
+    "tagline": "Curadoria de aventuras exclusivas no Porto e no vale do Douro. Viva a história, os rios e a brisa costeira portuguesa com o máximo conforto e design.",
+    "hubs": "Os Nossos Hubs",
+    "concierge": "Concierge Direto",
+    "concierge_desc": "Tire dúvidas, peça itinerários personalizados ou verifique o estado das reservas em segundos.",
+    "whatsapp_cta": "Mensagem no WhatsApp",
+    "rights": "Todos os direitos reservados."
+  },
+  "whatsapp": {
+    "general": "Olá! Procuro uma experiência premium no Porto. Posso falar com um especialista?",
+    "bike": "Olá! Tenho interesse em reservar um aluguer/experiência de e-bike premium (%ITEM_NAME%). Gostaria de falar com um concierge para verificar a disponibilidade ou solicitar contacto. Pode ajudar-me?",
+    "boat": "Olá! Tenho interesse em reservar um passeio privado de barco no Douro (%ITEM_NAME%). Gostaria de falar com um concierge para verificar a disponibilidade ou solicitar contacto. Pode ajudar-me?",
+    "cellar": "Olá! Tenho interesse em reservar uma prova numa cave de vinhos histórica (%ITEM_NAME%). Gostaria de falar com um concierge para verificar a disponibilidade ou solicitar contacto. Pode ajudar-me?"
+  }
+}

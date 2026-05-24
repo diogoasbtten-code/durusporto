@@ -1,0 +1,55 @@
+{
+  "nav": {
+    "fleet": "The Fleet",
+    "boats": "Douro Boats",
+    "cellar": "Wine Cellar",
+    "cta": "Message Us"
+  },
+  "hero": {
+    "badge": "Specialist Boutique Experiences",
+    "title": "Ride. Sail. Taste.",
+    "subtitle": "The ultimate Porto experience. Premium e-bikes, private Douro river tours, and historic wine cellars.",
+    "cta_primary": "Chat with a Specialist",
+    "cta_secondary": "Explore Experiences",
+    "availability": "🟢 Available now. Talk directly with our human team on WhatsApp.",
+    "scroll_hint": "Scroll To Discover"
+  },
+  "fleet": {
+    "badge": "Bespoke Mobile Architecture",
+    "title": "The Premium Fleet",
+    "text": "Traverse Porto's legendary hills, rustic cobblestones, and breathtaking coastal paths with absolute elegance. We host exclusively custom-configured, German-engineered e-bikes kept in pristine show-ready state by our in-house mechanics.",
+    "check_availability": "Check Availability"
+  },
+  "experiences": {
+    "boats": {
+      "badge": "Golden Hour Cruises",
+      "title": "Sailing the Douro",
+      "text": "Breeze past Porto's stunning historical landscape. Witness the spectacular architecture of any of the six bridges from prime water positions while floating on our classic, meticulously restored vintage cruise boat. Accompanied by expert handpicked Portuguese table reserve selections and locally cured appetizers, this is golden-hour elegance at its custom absolute peak.",
+      "feature_1": "Private Charter Booking (Up to 8 Explorers)",
+      "feature_2": "Sommelier and Catering Included",
+      "cta": "Request Boat Availability"
+    },
+    "cellar": {
+      "badge": "Vila Nova de Gaia Vaults",
+      "title": "Historic Cellars",
+      "text": "Breathe in the oak-perfumed legacy of Vila Nova de Gaia. Step inside secretive cellar chambers hosting aging casks filled with vintage nectar spanning over a century. Your private experience includes restricted access to vintage libraries, standard vertical tastings of rare Single Harvest Tawny, and historical narratives led by a dedicated, elite-certified sommelier.",
+      "feature_1": "Vintage Library Premium Vault Access",
+      "feature_2": "Sommelier-Led Single-Harvest Pairings",
+      "cta": "Reserve Tasting"
+    }
+  },
+  "footer": {
+    "tagline": "Curating elevated, boutique adventures across Porto and the magical Douro Valley. Experiencing Portuguese history, rivers, and coastal wind in ultimate physical comfort and design.",
+    "hubs": "Our Hubs",
+    "concierge": "Direct Concierge",
+    "concierge_desc": "Ask questions, request customizable private itineraries, or check direct booking statuses in seconds.",
+    "whatsapp_cta": "Message on WhatsApp",
+    "rights": "All rights reserved."
+  },
+  "whatsapp": {
+    "general": "Hi! I'm looking for a premium experience in Porto. Can I speak to a specialist?",
+    "bike": "Hi! I'm interested in booking a premium bike rental/experience (%ITEM_NAME%). I'd like to talk to a human concierge to check availability or request a callback. Could you assist me?",
+    "boat": "Hi! I'm interested in booking an exclusive private Douro River boat tour (%ITEM_NAME%). I'd like to talk to a human concierge to check availability or request a callback. Could you assist me?",
+    "cellar": "Hi! I'm interested in booking a historic wine cellar tasting (%ITEM_NAME%). I'd like to talk to a human concierge to check availability or request a callback. Could you assist me?"
+  }
+}
