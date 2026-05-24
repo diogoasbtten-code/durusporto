@@ -12,7 +12,7 @@ import WhatsAppIcon from "../ui/WhatsAppIcon";
 import { Zap, Bike, Users, ChevronDown, ChevronUp, MapPin } from "lucide-react";
 
 const googleMapsEmbedUrl =
-  "https://www.google.com/maps?q=Durus%20Rent%20Bike%20and%20e-Bike%2C%20Mercado%20da%20Ribeira%2C%20Cais%20da%20Ribeira%202%203%20e%204%2C%204000-509%20Porto&output=embed";
+  "https://maps.google.com/maps?q=Durus%20Rent%20Bike%20and%20e-Bike%2C%20Mercado%20da%20Ribeira%2C%20Cais%20da%20Ribeira%202%203%20e%204%2C%204000-509%20Porto&t=k&z=17&output=embed";
 
 export default function FleetShowcase() {
   // State to manage active expanded details for each category ("electric" | "classic" | null)
