@@ -47,7 +47,7 @@ export default function Hero() {
     >
       {/* Immersive Cinematic Background Image (No Next Image) */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center scale-105 pointer-events-none select-none filter brightness-[0.85]"
+        className="absolute inset-0 z-0 bg-cover bg-center scale-105 pointer-events-none select-none filter brightness-[1.02]"
         style={{ 
           backgroundImage: `url('https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&q=85&w=2400')`,
           backgroundAttachment: "scroll"
@@ -57,14 +57,14 @@ export default function Hero() {
 
       {/* Elegant overlays combining dark slate and a subtle warm Douro crimson-ruby hue */}
       <div className="absolute inset-0 z-1 pointer-events-none select-none" aria-hidden="true">
-        {/* Dark Slate Base Cover */}
-        <div className="absolute inset-0 bg-slate-900/55 mix-blend-multiply" />
+        {/* Dark Slate Base Cover (reduced opacity and removed mix-blend-multiply to show more background) */}
+        <div className="absolute inset-0 bg-slate-900/25" />
         
-        {/* Subtle Ruby/Warm tone vignette gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/80 via-slate-900/40 to-[#9F1239]/20" />
+        {/* Subtle Ruby/Warm tone vignette gradient overlay with very low opacity */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-slate-950/40 via-transparent to-[#9F1239]/10" />
         
-        {/* Vertical Fade to black or dark-slate at the bottom of standard viewport flow */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent" />
+        {/* Vertical Fade at the bottom, no stronger than from-slate-950/35 */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/35 to-transparent" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full text-center flex flex-col items-center">
@@ -85,15 +85,20 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Majestic Hero Main Header */}
-          <motion.h1
+          {/* Majestic Hero Main Header with a subtle soft ruby blurred atmosphere behind */}
+          <motion.div 
             variants={itemVariants}
-            className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[90px] font-extrabold tracking-tight leading-[1.1] selection:bg-brand-accent selection:text-white"
+            className="relative w-full"
           >
-            <span className="bg-gradient-to-r from-white via-[#FFF1F2] to-[#FFE4E6] text-transparent bg-clip-text drop-shadow-[0_2px_25px_rgba(159,18,57,0.4)]">
+            {/* Seductive, extremely soft blurred ruby atmosphere behind H1 */}
+            <div 
+              className="absolute inset-0 m-auto w-[65%] h-[40%] bg-[#9F1239]/20 blur-[60px] rounded-full pointer-events-none select-none"
+              aria-hidden="true"
+            />
+            <h1 className="relative z-10 font-heading text-5xl sm:text-7xl md:text-8xl lg:text-[90px] font-extrabold tracking-tight leading-[1.12] text-white selection:bg-brand-accent selection:text-white drop-shadow-[0_4px_18px_rgba(0,0,0,0.6)]">
               Pedalar. Navegar. Degustar.
-            </span>
-          </motion.h1>
+            </h1>
+          </motion.div>
 
           {/* Seamless Subhead narrative */}
           <motion.p
